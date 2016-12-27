@@ -1,0 +1,39 @@
+/**
+顶部状态栏
+**/
+.m-topbar{
+    width:100%;
+    background: #ddd;
+    > div{
+        height:28px;
+        line-height:28px;
+        width: 1090px;
+        margin: 0 auto;
+        .m-login{
+            float:left;
+        }
+        .m-center{
+            float:right;
+        }
+    }
+    
+}
+
+/**
+尾部
+**/
+.m-footer {
+  text-align: center;
+  padding-top:15px;
+  padding-bottom: 35px;
+  background-color: #fff;
+  color: #5b5b5b;
+  line-height: 22px;
+  a {
+    color: #5b5b5b;
+    &:hover {
+        color: #bcbcbc;
+        text-decoration: none;
+    }
+  }
+}
