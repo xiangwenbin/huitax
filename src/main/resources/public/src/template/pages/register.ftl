@@ -5,7 +5,7 @@
 <html lang="zh">
 <head>
   <meta charset="UTF-8">
-  <title>登录</title>
+  <title>用户注册</title>
 </head>
 <body class="g-doc">
   	<div class="g-hd">
@@ -15,10 +15,8 @@
           <div class="m-nav"></div>
         </div>
     </div>
-    <div class="bd-banner">
-	  	<div class="g-bd">
-	      <div id="app"></div>
-	    </div>
+    <div class="g-bd">
+      <div id="app"></div>
     </div>
   	<div class="g-ft">
   		<@footer />
