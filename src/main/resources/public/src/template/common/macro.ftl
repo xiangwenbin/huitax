@@ -5,8 +5,8 @@
 <#macro topbar>
   <div class="m-topbar">
     <div>
-      <div class="m-login">欢迎xxxx,<a href="#">登录</a>&nbsp;&nbsp;<a href="/register">注册</a>&nbsp;&nbsp;</div>
-      <div class="m-center"><a href="#">个人中心</a>&nbsp;&nbsp;<a href="#">帮助</a></div>
+      <div class="m-login">欢迎xxxx,<a href="/login">登录</a>&nbsp;&nbsp;<a href="/register">注册</a>&nbsp;&nbsp;</div>
+      <div class="m-center"><a href="/ucenter">个人中心</a>&nbsp;&nbsp;<a href="#">帮助</a></div>
     </div>
   </div>
 </#macro>

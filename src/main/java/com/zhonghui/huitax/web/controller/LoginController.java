@@ -28,5 +28,16 @@ public class LoginController extends BaseController {
 		this.setModelandView(model);
 		return "pages/register";
 	}
+
+	/**
+	 * 密码找回页
+	 * @param model
+	 * @return
+	 */
+	@RequestMapping("/resetPassword")
+	public String restPassword(Model model) {
+		this.setModelandView(model);
+		return "pages/resetPassword";
+	}
 	
 }

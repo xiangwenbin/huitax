@@ -1,12 +1,12 @@
 <template>
-  <div class="m-register">
+  <div class="m-restPassword">
     <el-form :model="ruleForm" :rules="rules" ref="ruleForm" label-position="right" label-width="100px" class=" card-box loginform">
-      <h3 class="title">用户注册</h3>
+      <h3 class="title">密码找回</h3>
       <el-form-item prop="username"  label="手机号">
-        <el-input type="text" v-model="ruleForm.username"  placeholder="请输入您的手机号"></el-input>
+        <el-input  v-model="ruleForm.username" auto-complete="off"  placeholder="请输入您的手机号"></el-input>
       </el-form-item>
-      <el-form-item prop="password" label="密码">
-        <el-input type="password" v-model="ruleForm.password" auto-complete="off" placeholder="密码"></el-input>
+      <el-form-item prop="password" label="新密码">
+        <el-input type="password" v-model="ruleForm.password" auto-complete="off" placeholder="新密码"></el-input>
       </el-form-item>
       <el-form-item prop="valCode" label="短信校验码">
         <el-col :span="10">
@@ -17,11 +17,8 @@
           <el-button type="info" @click="onGetValCode" :disabled="valBtnDisabled">{{btnValue}}</el-button>
         </el-col>
       </el-form-item>
-      <el-form-item prop="prototype" label=" ">
-          <el-checkbox v-model="ruleForm.prototype"><a href="#" target="_blank">注册协议</a></el-checkbox>
-      </el-form-item>
       <el-form-item style="width:100%;">
-        <el-button type="primary" style="width:100%;" @click.native.prevent="handleSubmit">注册</el-button>
+        <el-button type="primary" style="width:100%;" @click.native.prevent="handleSubmit">重置密码</el-button>
       </el-form-item>
     </el-form>
   </div>
@@ -44,8 +41,7 @@
         ruleForm: {
           username: '',
           password: '',
-          valCode:'',
-          prototype:true
+          valCode:''
         },
         btnValue:'获取验证码',
         rules: {
@@ -90,7 +86,7 @@
       handleSubmit(ev) {
         var _this=this;
         this.$refs.ruleForm.validate((valid) => {
-          if (valid&&this.ruleForm.prototype) {
+          if (valid) {
             // Request.get(`/ajax/index`, {
             //   params:{
             //     username:this.ruleForm.username,
@@ -112,7 +108,7 @@
 </script>
 
 <style lang="scss" scoped>
-  .m-register{
+  .m-restPassword{
       position:relative;
       height:620px;
       .card-box {
