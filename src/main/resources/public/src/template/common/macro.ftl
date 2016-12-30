@@ -24,3 +24,16 @@
   </div>
 </div>
 </#macro>
+
+<#macro ucenterNav>
+<div class="m-ucenter-nav">
+      	<h3>个人中心</h3>
+      	<ul>
+      		<li><a href="/ucenter/profile">帐号信息</a></li>
+      		<li><a href="/ucenter/profile">我的企业</a></li>
+      		<li><a href="/ucenter/profile">我的订单</a></li>
+      	</ul>
+      </div>
+</#macro>
+
+

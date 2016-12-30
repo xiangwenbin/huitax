@@ -119,6 +119,7 @@ for(var page in pages) {
     filename: folders[page]+'/'+page + '.ftl',
     template: pages[page], //模板路径
     inject: folders[page].indexOf("pages")>-1?true:false,
+    hash:true,
     // excludeChunks 允许跳过某些chunks, 而chunks告诉插件要引用entry里面的哪几个入口
     // 如何更好的理解这块呢？举个例子：比如本demo中包含两个模块（index和about），最好的当然是各个模块引入自己所需的js，
     // 而不是每个页面都引入所有的js，你可以把下面这个excludeChunks去掉，然后npm run build，然后看编译出来的index.html和about.html就知道了

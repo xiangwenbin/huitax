@@ -37,3 +37,25 @@
     }
   }
 }
+
+/**
+个人中心
+**/
+.m-ucenter-nav{
+    float:left;
+    width:300px;
+}
+.m-ucenter-content{
+    float:right;
+    width:780px;
+    min-height:500px;
+}
+
+// 地址选择组件
+.region-picker{
+    select {
+        height:36px;
+        border:1px solid #c0ccda;
+        border-radius:4px;
+    }
+}

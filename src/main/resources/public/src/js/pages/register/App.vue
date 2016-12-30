@@ -111,7 +111,7 @@
   }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss" >
   .m-register{
       position:relative;
       height:620px;

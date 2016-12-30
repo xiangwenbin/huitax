@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "axios": "^0.15.2",
+    "china-area-data": "^1.0.0",
     "element-ui": "^1.0.8",
     "lodash": "^4.17.2",
     "nprogress": "^0.2.0",
@@ -16,7 +17,8 @@
     "rxjs": "^5.0.0-rc.4",
     "vue": "^2.1.0",
     "vue-axios": "^1.1.2",
-    "vue-date-filter": "^1.0.1"
+    "vue-date-filter": "^1.0.1",
+    "vue-region-picker": "^3.0.1"
   },
   "devDependencies": {
     "autoprefixer": "^6.4.0",
