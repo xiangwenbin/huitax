@@ -1,5 +1,10 @@
 package com.zhonghui.huitax;
 
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.zhonghui.huitax.mapper.ZhUserMapper;
+import com.zhonghui.huitax.model.ZhUser;
+
 import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
@@ -7,9 +12,12 @@ import junit.framework.TestSuite;
 /**
  * Unit test for simple App.
  */
-public class AppTest 
+public class AppTest
     extends TestCase
 {
+	
+	 @Autowired  
+	 private ZhUserMapper mapper;  
     /**
      * Create the test case
      *
@@ -25,7 +33,7 @@ public class AppTest
      */
     public static Test suite()
     {
-        return new TestSuite( AppTest.class );
+        return new TestSuite( AppTst.class );
     }
 
     /**
@@ -35,4 +43,12 @@ public class AppTest
     {
         assertTrue( true );
     }
+    
+    
+    public void testInsert(){  
+        ZhUser user = new ZhUser();  
+       
+       /// user = mapper.findZhUserInfo();  
+        System.out.println("插入用户信息"+user.getUsername());  
+    }  
 }
