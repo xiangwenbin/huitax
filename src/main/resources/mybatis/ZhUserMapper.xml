@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zhonghui.huitax.mapper.ZhUserMapper">
+ 
+  <select id="findZhUserInfoById" resultType="com.zhonghui.huitax.model.ZhUser" parameterType="java.lang.Integer">
+    select username,nickname,mobile from zh_user where id = #{id,jdbcType=INTEGER}
+   </select>
+   
+   <insert id="save" parameterType="com.zhonghui.huitax.model.ZhUser" keyProperty="id">  
+        insert into zh_user(username,nickname,loginname,mobile,loginpassword,url,createtime,updatetime) values
+        (#{username,jdbcType=VARCHAR},#{nickname,jdbcType=VARCHAR},#{loginname,jdbcType=VARCHAR},#{mobile,jdbcType=VARCHAR},#{loginpassword,jdbcType=VARCHAR},
+        #{url,jdbcType=VARCHAR},#{createtime,jdbcType=NUMERIC},#{updatetime,jdbcType=NUMERIC})  
+    </insert> 
+ 
+</mapper>
