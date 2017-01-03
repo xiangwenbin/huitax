@@ -166,6 +166,7 @@ img{
 .f-mgb20{margin-bottom:20px;}
 .f-pl5{padding-left:5px;}
 .f-pt10{padding-top:10px;}
+.f-bs{box-sizing: border-box; }
 .s-fc0,a.s-fc0:hover{color:#333;}
 .s-fc1,a.s-fc2:hover{color:#666;}
 .s-fc3,a.s-fc3:hover{color:#999;}

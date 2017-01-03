@@ -19,6 +19,7 @@
 
 <script>
   import Request from '../../util/request';
+  import urlUtil from '../../util/urlUtil';
   //基础数据
   let _data={
         ruleForm: {
@@ -70,7 +71,7 @@
   }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss" >
   .m-login{
       position:relative;
       height:520px;
@@ -90,10 +91,5 @@
             font-size:16px;
           }
       }
-    
-    
-    
-    
   }
-  
 </style>

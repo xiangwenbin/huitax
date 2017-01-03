@@ -5,8 +5,8 @@
 <html lang="zh">
 <head>
   <meta charset="UTF-8">
-  <title>用户注册</title>
-</head>
+  <title>登录</title>
+<link href="/dist/static/css/core.css?a781d1da7b3db0d7699b" rel="stylesheet"><link href="/dist/static/css/login.css?a781d1da7b3db0d7699b" rel="stylesheet"></head>
 <body class="g-doc">
   	<div class="g-hd">
         <@topbar />
@@ -15,8 +15,10 @@
           <div class="m-nav"></div>
         </div>
     </div>
-    <div class="g-bd">
-      <div id="app"></div>
+    <div class="bd-banner">
+	  	<div class="g-bd">
+	      <div id="app"></div>
+	    </div>
     </div>
   	<div class="g-ft">
   		<@footer />
@@ -26,7 +28,7 @@
       
       </script>
     </#noescape>
-</body>
+<script type="text/javascript" src="/dist/static/js/core.js?a781d1da7b3db0d7699b"></script><script type="text/javascript" src="/dist/static/js/login.js?a781d1da7b3db0d7699b"></script></body>
 </html>
 </#escape>
 </@compress>

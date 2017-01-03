@@ -1,0 +1,24 @@
+
+.m-register {
+  position: relative;
+  height: 620px;
+}
+.m-register .card-box {
+    padding: 50px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 5px #c7c5c5;
+    width: 500px;
+    box-sizing: border-box;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -210px 0 0 -250px;
+}
+.m-register .card-box .title {
+      margin: 0px auto 30px auto;
+      text-align: left;
+      color: #505458;
+      font-size: 16px;
+}
+
+/*# sourceMappingURL=register.css.map*/

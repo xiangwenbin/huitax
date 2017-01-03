@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///webpack:///src/js/pages/ucenter/profile/App.vue"],"names":[],"mappings":";AACA;EACE,aAAa;CACd;AACD;IACI,aAAa;CAChB","file":"dist/static/css/profile.css","sourcesContent":["\n.m-profile {\n  width: 500px;\n}\n.m-profile h3 {\n    margin: 20px;\n}\n\n\n\n// WEBPACK FOOTER //\n// webpack:///src/js/pages/ucenter/profile/App.vue"],"sourceRoot":""}
