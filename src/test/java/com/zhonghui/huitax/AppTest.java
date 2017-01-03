@@ -31,10 +31,10 @@ public class AppTest
     /**
      * @return the suite of tests being tested
      */
-    public static Test suite()
-    {
-        return new TestSuite( AppTst.class );
-    }
+//    public static Test suite()
+//    {
+//        return new TestSuite( AppTst.class );
+//    }
 
     /**
      * Rigourous Test :-)
